@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fieldkit"
+version = "0.1.0"
+description = "Python library and CLI tool for scientific uncertainty propagation and unit handling."
+readme = "README.md"
+authors = [{ name = "Natalia Becerra" }]
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.24.0",
+    "sympy>=1.12",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+fieldkit = "fieldkit.cli:main"
